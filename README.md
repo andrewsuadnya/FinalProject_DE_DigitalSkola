@@ -4,7 +4,7 @@
 
 ## Project Overview
 
-This project is a part of the final project at Digital Skola, aiming to implement a data engineering pipeline using the following technologies:
+This project is a part of the final project Data Engineering with Digital Skola, aiming to implement a data engineering pipeline using the following technologies:
 - **Finnhub API**: To fetch news data.
 - **MongoDB Atlas**: To store news data fetched from Finnhub.
 - **PostgreSQL**: To store the sentiment analysis results of the news.
