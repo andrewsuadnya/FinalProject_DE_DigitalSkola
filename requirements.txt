@@ -1,0 +1,5 @@
+pandas
+pymongo
+Flask-SQLAlchemy
+textblob
+finnhub-python
