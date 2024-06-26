@@ -12,9 +12,7 @@ https://shrib.com/#Phillip3yM6o5k
 6. Create Python code to analyze news from MongoDB and load it to Postgres
 7. Schedule the point 5 and 6 using Airflow DAG
 
-
-
-# FinalProject_DE_DigitalSkola
+###############################################################################################################################################
 
 ## Introduction
 This project is a Data Engineering Final Project for Digital Skola. It includes various components such as data extraction, transformation, loading, and analysis using tools like Docker, PostgreSQL, MongoDB, and sentiment analysis libraries.
