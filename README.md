@@ -46,3 +46,4 @@ This project is a part of the final project Data Engineering at Digital Skola, a
 4. Configure your Finnhub and MongoDB Atlas credentials in the respective scripts.
 5. Run the Airflow scheduler and webserver.
 6. Trigger the DAGs to start the data pipeline.
+
