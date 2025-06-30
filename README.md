@@ -68,7 +68,7 @@ python /opt/airflow/plugins/sentiment_analysis_loader.py
 ---
 
 ## ✅ Validation
-* Use a PostgreSQL client or CLI to verify records in the target table:
+Use a PostgreSQL client or CLI to verify records in the target table:
 ```bash
 psql -h postgres -U airflow -d data_warehouse
 ```
