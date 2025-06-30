@@ -4,7 +4,7 @@
 
 ## Project Overview
 
-This project is part of the final assessment for the Data Engineering program at DigitalSkola. It implements an automated data pipeline that collects, analyzes, and stores financial news to provide sentiment insights for market monitoring. The pipeline integrates several tools:
+This project implements an automated data pipeline that collects, analyzes, and stores financial news data to perform sentiment analysis. The pipeline integrates several tools:
 - **Finnhub API**: To fetch news data.
 - **MongoDB Atlas**: To store news data fetched from Finnhub.
 - **PostgreSQL**: To store the sentiment analysis results of the news.
