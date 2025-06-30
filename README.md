@@ -1,14 +1,22 @@
-# FinalProject_DE_DigitalSkola
+# 📊 Automated Data Pipeline for Financial News Sentiment Analysis
 
 ![Untitled-2024-06-23-1930](https://github.com/andrewsuadnya/FinalProject_DE_DigitalSkola/assets/90898706/0dfb04d3-f428-4dfe-bf5b-6bf8bf9cdc8d)
 
 ## Project Overview
 
-This project is a part of the final project Data Engineering at Digital Skola, aiming to implement a data engineering pipeline using the following technologies:
+This project is part of the final assessment for the Data Engineering program at DigitalSkola. It implements an automated data pipeline that collects, analyzes, and stores financial news to provide sentiment insights for market monitoring. The pipeline integrates several tools:
 - **Finnhub API**: To fetch news data.
 - **MongoDB Atlas**: To store news data fetched from Finnhub.
 - **PostgreSQL**: To store the sentiment analysis results of the news.
 - **Apache Airflow**: To orchestrate and schedule tasks in the pipeline.
+
+## 🔁 Pipeline Flow Summary
+
+1. **Extract** news data from the Finnhub API.
+2. **Load** data into MongoDB Atlas.
+3. **Analyze** the sentiment of the news articles.
+4. **Load** sentiment results into PostgreSQL.
+5. **Orchestrate** all tasks using Airflow.
 
 ## Steps
 
@@ -46,3 +54,26 @@ This project is a part of the final project Data Engineering at Digital Skola, a
 4. Configure your Finnhub and MongoDB Atlas credentials in the respective scripts.
 5. Run the Airflow scheduler and webserver.
 6. Trigger the DAGs to start the data pipeline.
+
+## Running the Pipeline
+### Load Finnhub News into MongoDB
+```bash
+docker exec -it airflow_webserver bash
+python /opt/airflow/plugins/finnhub_mongodb_loader.py
+```
+### Run Sentiment Analysis and Store in PostgreSQL
+```bash
+python /opt/airflow/plugins/sentiment_analysis_loader.py
+```
+---
+
+## ✅ Validation
+* Use a PostgreSQL client or CLI to verify records in the target table:
+```bash
+psql -h postgres -U airflow -d data_warehouse
+```
+---
+
+## 📌 Notes
+* Make sure to configure your Finnhub API key and MongoDB connection strings in the relevant plugin scripts.
+* DAGs should be defined in Airflow to automate the full pipeline.
