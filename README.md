@@ -1,4 +1,4 @@
-# 📊 Automated Data Pipeline for Financial News Sentiment Analysis
+# 📰 Automated Financial News Sentiment Pipeline with Airflow
 
 ![Untitled-2024-06-23-1930](https://github.com/andrewsuadnya/FinalProject_DE_DigitalSkola/assets/90898706/0dfb04d3-f428-4dfe-bf5b-6bf8bf9cdc8d)
 
